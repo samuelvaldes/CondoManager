@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native';
 import React from 'react';
 
-export default function App() {
+export default function SingInScreen() {
   return (
     <View>
-      <Text>AppScreen</Text>
+      <Text>SignInScreen ...</Text>
     </View>
   );
 }
