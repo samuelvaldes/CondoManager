@@ -3,6 +3,7 @@ import { View, Text, LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import Navigator from './src/navigation/Navigator';
+import { AuthProvider } from './src/context/AuthContext';
 
 export default function App() {
   LogBox.ignoreLogs([
@@ -12,13 +13,17 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Navigator/>        
+      <AppState>
+        <Navigator/> 
+      </AppState>       
     </NavigationContainer>
   );
 }
 
 const AppState = ({children}:{children:any}) => {
-
-  return { children }
-
+  return (
+    <AuthProvider>
+      {children}
+    </AuthProvider>
+  )
 }
