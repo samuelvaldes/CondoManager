@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import { LogBox } from 'react-native';
+import { Alert, AppRegistry, LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import React, { useEffect } from 'react';
 import messaging from '@react-native-firebase/messaging';
@@ -7,18 +7,23 @@ import messaging from '@react-native-firebase/messaging';
 import Navigator from './src/navigation/Navigator';
 import { AuthProvider } from './src/context/AuthContext';
 
-async function requestUserPermission() {
-  const authStatus = await messaging().requestPermission({
+function requestUserPermission() {
+  const enabled=null;
+  const authStatus =  messaging().requestPermission({
     announcement: true,
+  }).then((status)=>{
+    if (status === messaging.AuthorizationStatus.AUTHORIZED ||
+    status === messaging.AuthorizationStatus.PROVISIONAL){
+        console.log('Authorization status:', status);
+    }
   });
-  const enabled =
-    authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
-    authStatus === messaging.AuthorizationStatus.PROVISIONAL;
-
-  if (enabled) {
-    console.log('Authorization status:', authStatus);
-  }
 }
+// Register background handler
+const backgroundMessage = messaging().setBackgroundMessageHandler(async remoteMessage => {
+  console.log('Message handled in the background!', remoteMessage);
+});
+
+AppRegistry.registerComponent('app', () => App);
 
 export default function App() {
   LogBox.ignoreLogs([
@@ -27,7 +32,20 @@ export default function App() {
   ]);
 
   useEffect(() => {
+    const token = messaging().getToken().then((token) => {
+      console.log('Token: ' + token);
+    });
+    
     requestUserPermission();
+    const foregroundMessage = messaging().onMessage(async remoteMessage => {
+      Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
+    });
+
+    return ()=>{
+       foregroundMessage();
+       backgroundMessage;
+
+    }
   }, []);
 
   return (
