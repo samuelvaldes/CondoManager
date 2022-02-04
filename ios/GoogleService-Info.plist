@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>610033959174-hln7asie8t22fqcteld46shmp9bh4a8o.apps.googleusercontent.com</string>
+	<string>1069221278651-ohdsu9ggcdu0b0h3q9s77ov868g30k7c.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.610033959174-hln7asie8t22fqcteld46shmp9bh4a8o</string>
+	<string>com.googleusercontent.apps.1069221278651-ohdsu9ggcdu0b0h3q9s77ov868g30k7c</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCMkZ8qChZxrQJwN0f9QVcH4LUFPang5mc</string>
+	<string>AIzaSyAKlpYnN6V3UjzVYsNjlQUGvuRjODdttcY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>610033959174</string>
+	<string>1069221278651</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>org.reactjs.native.example.CondoManager</string>
+	<string>com.grupoandrade.mobile.gaadmin</string>
 	<key>PROJECT_ID</key>
-	<string>awesomeapp-abedd</string>
+	<string>appnotificaciones-66c44</string>
 	<key>STORAGE_BUCKET</key>
-	<string>awesomeapp-abedd.appspot.com</string>
+	<string>appnotificaciones-66c44.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:610033959174:ios:98ce634d7d68d2809cde87</string>
+	<string>1:1069221278651:ios:b2623e4567774b684f0a9e</string>
 </dict>
 </plist>
