@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1069221278651",
+    "project_id": "appnotificaciones-66c44",
+    "storage_bucket": "appnotificaciones-66c44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069221278651:android:319586640ebbac464f0a9e",
+        "android_client_info": {
+          "package_name": "com.grupoandrade.mobile.gaadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069221278651-hab33v8hq13d7ca70gpeq2qmik2hf8jf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9AHj-A6Y8diilvccEk18geVLd2snXd1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069221278651-hab33v8hq13d7ca70gpeq2qmik2hf8jf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1069221278651-ohdsu9ggcdu0b0h3q9s77ov868g30k7c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.grupoandrade.mobile.gaadmin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
