@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* CondoManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CondoManagerTests.m */; };
+		00E356F31AD99517003FC87E /* GAAdminTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* GAAdminTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		49EB99C727AB2F8B0036679F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49EB99C627AB2F8B0036679F /* GoogleService-Info.plist */; };
-		6172F2D35A4C3AA820D92908 /* libPods-CondoManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-CondoManager.a */; };
-		7EF68E3733C33B6898317E18 /* libPods-CondoManager-CondoManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-CondoManager-CondoManagerTests.a */; };
+		6172F2D35A4C3AA820D92908 /* libPods-GAAdmin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-GAAdmin.a */; };
+		7EF68E3733C33B6898317E18 /* libPods-GAAdmin-GAAdminTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-GAAdmin-GAAdminTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -23,28 +23,28 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = CondoManager;
+			remoteInfo = GAAdmin;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* CondoManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CondoManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* GAAdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAAdminTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* CondoManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CondoManagerTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* CondoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CondoManager/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CondoManager/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CondoManager/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CondoManager/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CondoManager/main.m; sourceTree = "<group>"; };
-		1D0AE47A65C8663E3B452821 /* Pods-CondoManager-CondoManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoManager-CondoManagerTests.release.xcconfig"; path = "Target Support Files/Pods-CondoManager-CondoManagerTests/Pods-CondoManager-CondoManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* GAAdminTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAAdminTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* GAAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GAAdmin/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GAAdmin/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GAAdmin/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GAAdmin/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GAAdmin/main.m; sourceTree = "<group>"; };
+		1D0AE47A65C8663E3B452821 /* Pods-GAAdmin-GAAdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAAdmin-GAAdminTests.release.xcconfig"; path = "Target Support Files/Pods-GAAdmin-GAAdminTests/Pods-GAAdmin-GAAdminTests.release.xcconfig"; sourceTree = "<group>"; };
 		49EB99C627AB2F8B0036679F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6423831EA8574132BED9D8CC /* libPods-CondoManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CondoManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C97AB639B58BBB4B15BBE30 /* Pods-CondoManager-CondoManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoManager-CondoManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-CondoManager-CondoManagerTests/Pods-CondoManager-CondoManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CondoManager/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ABFE59519B596E51CEFDCCC0 /* libPods-CondoManager-CondoManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CondoManager-CondoManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A881CF5CF3F2B244570E2A /* Pods-CondoManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoManager.debug.xcconfig"; path = "Target Support Files/Pods-CondoManager/Pods-CondoManager.debug.xcconfig"; sourceTree = "<group>"; };
-		D00AAFFCFCFDA5787532823F /* Pods-CondoManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoManager.release.xcconfig"; path = "Target Support Files/Pods-CondoManager/Pods-CondoManager.release.xcconfig"; sourceTree = "<group>"; };
+		6423831EA8574132BED9D8CC /* libPods-GAAdmin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GAAdmin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C97AB639B58BBB4B15BBE30 /* Pods-GAAdmin-GAAdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAAdmin-GAAdminTests.debug.xcconfig"; path = "Target Support Files/Pods-GAAdmin-GAAdminTests/Pods-GAAdmin-GAAdminTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GAAdmin/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABFE59519B596E51CEFDCCC0 /* libPods-GAAdmin-GAAdminTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GAAdmin-GAAdminTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A881CF5CF3F2B244570E2A /* Pods-GAAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAAdmin.debug.xcconfig"; path = "Target Support Files/Pods-GAAdmin/Pods-GAAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		D00AAFFCFCFDA5787532823F /* Pods-GAAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAAdmin.release.xcconfig"; path = "Target Support Files/Pods-GAAdmin/Pods-GAAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF68E3733C33B6898317E18 /* libPods-CondoManager-CondoManagerTests.a in Frameworks */,
+				7EF68E3733C33B6898317E18 /* libPods-GAAdmin-GAAdminTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,20 +61,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6172F2D35A4C3AA820D92908 /* libPods-CondoManager.a in Frameworks */,
+				6172F2D35A4C3AA820D92908 /* libPods-GAAdmin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* CondoManagerTests */ = {
+		00E356EF1AD99517003FC87E /* GAAdminTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* CondoManagerTests.m */,
+				00E356F21AD99517003FC87E /* GAAdminTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = CondoManagerTests;
+			path = GAAdminTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -85,7 +85,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* CondoManager */ = {
+		13B07FAE1A68108700A75B9A /* GAAdmin */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -95,15 +95,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = CondoManager;
+			name = GAAdmin;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				6423831EA8574132BED9D8CC /* libPods-CondoManager.a */,
-				ABFE59519B596E51CEFDCCC0 /* libPods-CondoManager-CondoManagerTests.a */,
+				6423831EA8574132BED9D8CC /* libPods-GAAdmin.a */,
+				ABFE59519B596E51CEFDCCC0 /* libPods-GAAdmin-GAAdminTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,9 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				49EB99C627AB2F8B0036679F /* GoogleService-Info.plist */,
-				13B07FAE1A68108700A75B9A /* CondoManager */,
+				13B07FAE1A68108700A75B9A /* GAAdmin */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* CondoManagerTests */,
+				00E356EF1AD99517003FC87E /* GAAdminTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
@@ -134,8 +134,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* CondoManager.app */,
-				00E356EE1AD99517003FC87E /* CondoManagerTests.xctest */,
+				13B07F961A680F5B00A75B9A /* GAAdmin.app */,
+				00E356EE1AD99517003FC87E /* GAAdminTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0A881CF5CF3F2B244570E2A /* Pods-CondoManager.debug.xcconfig */,
-				D00AAFFCFCFDA5787532823F /* Pods-CondoManager.release.xcconfig */,
-				6C97AB639B58BBB4B15BBE30 /* Pods-CondoManager-CondoManagerTests.debug.xcconfig */,
-				1D0AE47A65C8663E3B452821 /* Pods-CondoManager-CondoManagerTests.release.xcconfig */,
+				C0A881CF5CF3F2B244570E2A /* Pods-GAAdmin.debug.xcconfig */,
+				D00AAFFCFCFDA5787532823F /* Pods-GAAdmin.release.xcconfig */,
+				6C97AB639B58BBB4B15BBE30 /* Pods-GAAdmin-GAAdminTests.debug.xcconfig */,
+				1D0AE47A65C8663E3B452821 /* Pods-GAAdmin-GAAdminTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* CondoManagerTests */ = {
+		00E356ED1AD99517003FC87E /* GAAdminTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CondoManagerTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GAAdminTests" */;
 			buildPhases = (
 				A130D646172E58E1D159D8F2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -169,14 +169,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = CondoManagerTests;
-			productName = CondoManagerTests;
-			productReference = 00E356EE1AD99517003FC87E /* CondoManagerTests.xctest */;
+			name = GAAdminTests;
+			productName = GAAdminTests;
+			productReference = 00E356EE1AD99517003FC87E /* GAAdminTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* CondoManager */ = {
+		13B07F861A680F5B00A75B9A /* GAAdmin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CondoManager" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GAAdmin" */;
 			buildPhases = (
 				3E482C27206C4DEF2FE45063 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -191,9 +191,9 @@
 			);
 			dependencies = (
 			);
-			name = CondoManager;
-			productName = CondoManager;
-			productReference = 13B07F961A680F5B00A75B9A /* CondoManager.app */;
+			name = GAAdmin;
+			productName = GAAdmin;
+			productReference = 13B07F961A680F5B00A75B9A /* GAAdmin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CondoManager" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "GAAdmin" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,8 +226,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* CondoManager */,
-				00E356ED1AD99517003FC87E /* CondoManagerTests */,
+				13B07F861A680F5B00A75B9A /* GAAdmin */,
+				00E356ED1AD99517003FC87E /* GAAdminTests */,
 			);
 		};
 /* End PBXProject section */
@@ -282,7 +282,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CondoManager-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-GAAdmin-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -295,15 +295,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CondoManager-CondoManagerTests/Pods-CondoManager-CondoManagerTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GAAdmin-GAAdminTests/Pods-GAAdmin-GAAdminTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CondoManager-CondoManagerTests/Pods-CondoManager-CondoManagerTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GAAdmin-GAAdminTests/Pods-GAAdmin-GAAdminTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CondoManager-CondoManagerTests/Pods-CondoManager-CondoManagerTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GAAdmin-GAAdminTests/Pods-GAAdmin-GAAdminTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8D1F3A46C5F56601C36102D7 /* [CP-User] [RNFB] Core Configuration */ = {
@@ -334,7 +334,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CondoManager-CondoManagerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-GAAdmin-GAAdminTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -347,15 +347,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CondoManager/Pods-CondoManager-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GAAdmin/Pods-GAAdmin-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CondoManager/Pods-CondoManager-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GAAdmin/Pods-GAAdmin-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CondoManager/Pods-CondoManager-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GAAdmin/Pods-GAAdmin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -384,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* CondoManagerTests.m in Sources */,
+				00E356F31AD99517003FC87E /* GAAdminTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +402,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* CondoManager */;
+			target = 13B07F861A680F5B00A75B9A /* GAAdmin */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -410,14 +410,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-CondoManager-CondoManagerTests.debug.xcconfig */;
+			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-GAAdmin-GAAdminTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CondoManagerTests/Info.plist;
+				INFOPLIST_FILE = GAAdminTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,17 +431,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CondoManager.app/CondoManager";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAAdmin.app/GAAdmin";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-CondoManager-CondoManagerTests.release.xcconfig */;
+			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-GAAdmin-GAAdminTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = CondoManagerTests/Info.plist;
+				INFOPLIST_FILE = GAAdminTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,20 +455,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CondoManager.app/CondoManager";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAAdmin.app/GAAdmin";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-CondoManager.debug.xcconfig */;
+			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-GAAdmin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CR8U45QEG8;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = CondoManager/Info.plist;
+				INFOPLIST_FILE = GAAdmin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,7 +479,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = CondoManager;
+				PRODUCT_NAME = GAAdmin;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -488,13 +488,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-CondoManager.release.xcconfig */;
+			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-GAAdmin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CR8U45QEG8;
-				INFOPLIST_FILE = CondoManager/Info.plist;
+				INFOPLIST_FILE = GAAdmin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,7 +505,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = CondoManager;
+				PRODUCT_NAME = GAAdmin;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -637,7 +637,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CondoManagerTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GAAdminTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CondoManager" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GAAdmin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -655,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CondoManager" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "GAAdmin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
