@@ -27,6 +27,9 @@ export default function Navigator() {
     (
         <Stack.Navigator
             initialRouteName={!isSignedIn?'SignInScreen':'HomeScreen'}
+            screenOptions={{
+                headerShown: false,
+            }}
         >
             <Stack.Screen name="SignInScreen" component={SingInScreen} />
             <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
