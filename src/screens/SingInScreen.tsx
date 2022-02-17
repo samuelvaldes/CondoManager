@@ -1,12 +1,14 @@
 import { PrivateValueStore, useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import React, { useContext } from 'react';
-import { TouchableOpacity, View, ScrollView, Text, Image, KeyboardAvoidingView, Platform, StyleSheet, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import React, { useContext, useEffect } from 'react';
+import { TouchableOpacity, View, ScrollView, Text, Image, KeyboardAvoidingView, Platform, StyleSheet, TouchableWithoutFeedback, Keyboard, Alert } from 'react-native';
 import { Input } from 'react-native-elements';
 import Icon  from 'react-native-vector-icons/Ionicons';
+import auth from '@react-native-firebase/auth';
 import { AuthContext } from '../context/AuthContext';
 import { useForm } from '../hooks/useForm';
 import { RootStackParams } from '../navigation/Navigator';
+import { useState } from 'react';
 
 type screenProp = StackNavigationProp<RootStackParams, 'SignInScreen'>;
 
@@ -14,11 +16,10 @@ export default function SignInScreen() {
   const { signIn } = useContext(AuthContext);
   const navigation = useNavigation<screenProp>();
 
-  const {form, error, onChange} = useForm({
+  const {form, error, isError, onChange} = useForm({
     userName: '',
     passWord: ''
   });
-
 
   const getError = (campo:string) => {
     let message:string ='';
@@ -29,6 +30,35 @@ export default function SignInScreen() {
       }
     });
     return message;
+  }
+  const getFieldValue = (campo:string) => {
+    let message:string ='';
+    const returnMessage = (msg:any) => {return (message=msg)}
+    Object.entries(form).forEach(([key, value]) => {
+      if (key === campo){
+        returnMessage(value);
+      }
+    });    
+    return message;
+  }
+
+  const logIn = async(form:any)=> {
+    
+    const {userName, passWord} = form;
+
+    //console.log('-------->>> user: ' + userName + ' Pass: ' + passWord);
+
+    const userCredential = await auth().signInWithEmailAndPassword(userName,passWord)
+      .then(()=> {
+          console.log('usuario firmado');
+          signIn();          
+      })
+      .catch((err)=>{
+        console.error('Error: ' + err);
+      })
+
+      console.log(userCredential + '<<<-----------');
+      
   }
 
 
@@ -94,6 +124,17 @@ export default function SignInScreen() {
                   placeholder="usuario"
                   containerStyle={styles.inputForm}
                   style = {{color:'white'}}
+                  rightIcon= {
+                    <Icon
+                      name="information-circle-outline"
+                      color='white'
+                      size={30}
+                      onPress={ ()=>
+                        Alert.alert("Información", "Debe ingresar su correo electrónico corporativo, \n"
+                         + "Si no tiene usuario, debe solicitarlo a la mesa de ayuda con un ticket")
+                      }
+                    />
+                  }                  
                   leftIcon = {
                       <Icon
                           name="person-outline"
@@ -127,12 +168,31 @@ export default function SignInScreen() {
                     placeholder="contraseña"
                     containerStyle={styles.inputForm}
                     style = {{color:'white'}}
+                    rightIcon= {
+                      <Icon
+                        name="information-circle-outline"
+                        color='white'
+                        size={30}
+                        onPress={ ()=>
+                          Alert.alert("Información","La contraseña debe estar compuesta por: \n" +
+                          "* Entre 8 y 15 caracteres \n" +
+                          "* Una mayúscula, \n" +
+                          "* Una minúscula, \n" +
+                          "* Un número y \n" +
+                          "* Un caracter de los siguientes $@$!%#*?&",
+                          [
+                            { text: "OK"}
+                          ]
+                          )
+                        }
+                      />
+                    }
                     leftIcon = {
-                        <Icon
-                            name="key-outline"
-                            color='white'
-                            size={30}
-                        />
+                      <Icon
+                          name="key-outline"
+                          color='white'
+                          size={30}
+                      />
                     }
                     errorStyle={{ fontSize:20, color: 'red' }}
                     //errorMessage={error['passWord']}
@@ -142,7 +202,7 @@ export default function SignInScreen() {
                         value, 
                        'passWord',
                        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%#*?&])[A-Za-z\d$@$!%*?&]{8,15}/,
-                       'La contraseña almenos es de 8 caracteres y debe tener un caracter especial'
+                       'Ingrese una contraseña válida'
                       )
                     }
                   />
@@ -162,10 +222,8 @@ export default function SignInScreen() {
             }}
           >
             <TouchableOpacity
-              onPress={ ()=>{
-                // signIn
-                 console.log(JSON.stringify(form,null,4)) 
-                }
+              onPress={ 
+                ()=>logIn(form)
               }
               style={{
                 height: 50,
@@ -173,12 +231,16 @@ export default function SignInScreen() {
                 justifyContent: 'center',
                 alignItems: 'center',
                 borderRadius:10,
-                backgroundColor: '#39B2E6'
-              }}>
+                backgroundColor: isError ? '#abc9d6' : getFieldValue('passWord') === '' ? '#abc9d6' : '#39B2E6',
+              }}
+              disabled={isError ? true : getFieldValue('passWord') === '' ? true : false }
+              activeOpacity={isError ? 0.2 : 1}
+              >
                 <Text
                   style={{
                     fontSize:20,
                     color:'white',
+                    opacity: isError ? 0.3 : 1
                   }}
                 >
                   Entrar
