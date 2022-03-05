@@ -32,10 +32,7 @@ export default function App() {
   ]);
 
   useEffect(() => {
-    const token = messaging().getToken().then((token) => {
-      console.log('Token: ' + token);
-    });
-    
+
     requestUserPermission();
     const foregroundMessage = messaging().onMessage(async remoteMessage => {
       Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));

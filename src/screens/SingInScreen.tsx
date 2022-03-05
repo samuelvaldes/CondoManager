@@ -5,12 +5,58 @@ import { TouchableOpacity, View, ScrollView, Text, Image, KeyboardAvoidingView, 
 import { Input } from 'react-native-elements';
 import Icon  from 'react-native-vector-icons/Ionicons';
 import auth from '@react-native-firebase/auth';
+import messaging from '@react-native-firebase/messaging';
+
 import { AuthContext } from '../context/AuthContext';
 import { useForm } from '../hooks/useForm';
 import { RootStackParams } from '../navigation/Navigator';
-import { useState } from 'react';
+import gaAPI from '../api/gaAPI';
+import { userToken, token } from '../interfaces/NotificationInterface';
+
 
 type screenProp = StackNavigationProp<RootStackParams, 'SignInScreen'>;
+
+function registerToken(form:any) {
+  const { userName } = form;
+  
+  const token = messaging().getToken()
+  .then((token) => {
+    console.log('Token: ' + token);
+    return token;
+  });
+  
+  
+  const userTokens = gaAPI.get('/api/pushNotToken',{params:{email:userName}})
+  .then((tokens)=> {
+    let existeTokenNuevo = false;
+    const tokenss = JSON.parse(tokens.data[0].token)
+    
+    for (let i = 0; i < tokenss.length; i++) {
+      const element = tokenss[i];
+      //console.log('>>>>>>Element: ' + JSON.stringify(element,null,4) + '\n' + 'TOKEN: ' + JSON.stringify(token,null,4));
+      if (JSON.stringify(element,null,4) === JSON.stringify(token,null,4)){
+        existeTokenNuevo = true;
+        //console.log('>>>>> EXISTE TOKEN');
+      } else {
+        //console.log('>>>>> NOOOOO EXISTE TOKEN');
+      }
+    }
+    
+    if (!existeTokenNuevo) {
+      tokenss.push(token);
+    }
+
+    /** el valor del token para campaña en firebase */
+    //console.log('!!!!!!!: '+ listaTokens[2].token._W);
+
+    const saveTokens = gaAPI.post('/api/pushNotToken',{params:{email:userName, tokenObject: JSON.stringify(tokenss,null,4) }})
+    .then((response)=>{console.log('>>>>>>>>>>' + response.status);
+    })
+    .catch((err)=>console.log('Error al Guardar el tokenObject ' + err));
+
+  })
+  .catch((err)=>console.log('Errorss:' + err));
+}
 
 export default function SignInScreen() {
   const { signIn } = useContext(AuthContext);
@@ -50,14 +96,15 @@ export default function SignInScreen() {
 
     const userCredential = await auth().signInWithEmailAndPassword(userName,passWord)
       .then(()=> {
-          console.log('usuario firmado');
-          signIn();          
+          console.log('usuario firmado...');
+          registerToken(form);
+          signIn();
       })
       .catch((err)=>{
         console.error('Error: ' + err);
       })
 
-      console.log(userCredential + '<<<-----------');
+      //console.log(userCredential + '<<<-----------');
       
   }
 
